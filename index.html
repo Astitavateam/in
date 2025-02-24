@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astitava - Home Transformation</title>
+    <title>Astitava - Transform Your Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,32 +17,48 @@
             margin: 50px auto;
             background: white;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #333;
         }
         p {
-            color: #555;
+            color: #666;
         }
-        input[type="file"], input[type="submit"] {
-            margin-top: 10px;
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Astitava</h1>
-        <p>Transform your home with AI-powered designs. Upload a picture of your space and get a vastu-compliant redesign.</p>
-        
-        <form action="#" method="POST" enctype="multipart/form-data">
-            <input type="file" name="room-image" accept="image/*" required>
-            <br>
-            <input type="submit" value="Get AI Redesign">
-        </form>
-        
-        <p>Contact us at: <a href="mailto:info.astitava.org@gmail.com">info.astitava.org@gmail.com</a></p>
+        <p>Transform your home with AI-powered vastu-compliant designs.</p>
+        <p>Upload your room image to get a transformation suggestion.</p>
+        <input type="file" id="upload" accept="image/*">
+        <button onclick="submitImage()">Get AI Redesign</button>
+        <p>Contact us: <a href="mailto:info.astitava.org@gmail.com">info.astitava.org@gmail.com</a></p>
     </div>
+
+    <script>
+        function submitImage() {
+            alert("Feature coming soon! Stay tuned.");
+            // Prevent form submission if no backend is present
+        }
+    </script>
 </body>
 </html>
